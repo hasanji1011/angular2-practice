@@ -1,0 +1,17 @@
+<product-details [selectedProduct]="itemSelected"></product-details>
+<table class="table table-striped">
+  <tr>
+      <th>Index</th>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Body</th>
+      <th></th>
+  </tr>
+  <tr *ngFor="let item of products">
+        <td>{{item.id}}</td>
+        <td>{{item.userId}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.body}}</td>
+        <td><button class="btn btn-default" (click)="select(item)">Select</button></td>
+  </tr>
+</table>

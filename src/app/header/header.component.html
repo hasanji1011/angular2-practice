@@ -18,6 +18,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li (click)="loadTemplate('login')"><a href="#">Login</a></li>
         <li (click)="loadTemplate('register')"><a href="#">Register</a></li>
+        <li (click)="loadTemplate('products')"><a href="#">Products</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -28,4 +29,5 @@
         <cm-login></cm-login>
     </div>
     <div *ngIf="contentType == 'register'"><cm-register></cm-register></div>
+    <div *ngIf="contentType == 'products'"><app-products></app-products></div>
 </div>
